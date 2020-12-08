@@ -8,11 +8,6 @@ local disableemotesbutton = toolbar:CreateButton("Disable Emotes", "This button 
 local disableresetbutton = toolbar:CreateButton("Disable Reset Character", "This button inserts a LocalScript into StarterGUI that disables the reset character button in the Roblox menu.", "rbxassetid://4458901886")
 local disableshiftlockbutton = toolbar:CreateButton("Disable Shift Lock Switch", "This button inserts a Script into Workspace that disables the shift lock switch toggle in the Roblox menu.", "rbxassetid://4458901886")
 local disableallbutton = toolbar:CreateButton("Disable All CoreGUI Functions","This button inserts a LocalScript that disables every CoreGUI function listed in the other buttons.","rbxassetid://4458901886")
--- local readmedocument = toolbar:CreateButton("ReadMe Information","Inserts a readme document into the Workplace menu.")
---readmedocument.Click:Connect (function()
--- local newreadmescript = Instance.new("Script")
--- newreadmescript.Name = "DisableCoreGUIFunctionsReadMe"
---end)
 disablechatbutton.Click:Connect (function()
 	local newdisablechatscript = Instance.new("LocalScript")
 	newdisablechatscript.Source = "local StarterGui = game:GetService('StarterGui') game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)"
